@@ -53,6 +53,9 @@ def movies_with_director_key(name, movies_collection)
   while counter < movies_collection.length do
     data = movies_collection[counter]
     ans.push(movie_with_director_name(name, data))
+    counter += 1 
+  end
+  ans
 end
 
 
